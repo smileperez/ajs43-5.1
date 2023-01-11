@@ -1,15 +1,15 @@
-import Bowman from '../js/classBowman';
-import Daemon from '../js/classDaemon';
-import Magician from '../js/classMagician';
-import Swordsman from '../js/classSwordsman';
-import Undead from '../js/classUndead';
-import Zombie from '../js/classZombie';
+import Bowman from '../js/Bowman';
+import Daemon from '../js/Daemon';
+import Magician from '../js/Magician';
+import Swordsman from '../js/Swordsman';
+import Undead from '../js/Undead';
+import Zombie from '../js/Zombie';
 
 test('1.1. Должен создаваться Class Character Bowman', () => {
   const received = new Bowman('TestName1');
   const expected = {
-    _name: 'TestName1',
-    _type: 'Bowman',
+    name: 'TestName1',
+    type: 'Bowman',
     attack: 25,
     defence: 25,
     health: 100,
@@ -22,8 +22,8 @@ test('1.1. Должен создаваться Class Character Bowman', () => {
 test('1.2. Должен создаваться Class Character Daemon', () => {
   const received = new Daemon('TestName2');
   const expected = {
-    _name: 'TestName2',
-    _type: 'Daemon',
+    name: 'TestName2',
+    type: 'Daemon',
     attack: 10,
     defence: 40,
     health: 100,
@@ -36,8 +36,8 @@ test('1.2. Должен создаваться Class Character Daemon', () => {
 test('1.3. Должен создаваться Class Character Magician', () => {
   const received = new Magician('TestName3');
   const expected = {
-    _name: 'TestName3',
-    _type: 'Magician',
+    name: 'TestName3',
+    type: 'Magician',
     attack: 10,
     defence: 40,
     health: 100,
@@ -50,8 +50,8 @@ test('1.3. Должен создаваться Class Character Magician', () => 
 test('1.4. Должен создаваться Class Character Swordsman', () => {
   const received = new Swordsman('TestName4');
   const expected = {
-    _name: 'TestName4',
-    _type: 'Swordsman',
+    name: 'TestName4',
+    type: 'Swordsman',
     attack: 40,
     defence: 10,
     health: 100,
@@ -64,8 +64,8 @@ test('1.4. Должен создаваться Class Character Swordsman', () =>
 test('1.5. Должен создаваться Class Character Undead', () => {
   const received = new Undead('TestName5');
   const expected = {
-    _name: 'TestName5',
-    _type: 'Undead',
+    name: 'TestName5',
+    type: 'Undead',
     attack: 25,
     defence: 25,
     health: 100,
@@ -78,8 +78,8 @@ test('1.5. Должен создаваться Class Character Undead', () => {
 test('1.6. Должен создаваться Class Character Zombie', () => {
   const received = new Zombie('TestName6');
   const expected = {
-    _name: 'TestName6',
-    _type: 'Zombie',
+    name: 'TestName6',
+    type: 'Zombie',
     attack: 40,
     defence: 10,
     health: 100,
