@@ -1,7 +1,7 @@
 export default class Character {
   constructor(name, type, attack, defence) {
-    this.validateName(name);
-    this.validateType(type);
+    Character.validateName(name);
+    Character.validateType(type);
     this.name = name;
     this.type = type;
     this.attack = attack;
@@ -10,7 +10,7 @@ export default class Character {
     this.level = 1;
   }
 
-  validateName(name) {
+  static validateName(name) {
     if (name === '') {
       throw new Error('Имя не может быть пустым');
     } else if (typeof name !== 'string') {
@@ -22,7 +22,7 @@ export default class Character {
     }
   }
 
-  validateType(type) {
+  static validateType(type) {
     const types = ['Bowman', 'Swordsman', 'Magician', 'Daemon', 'Undead', 'Zombie'];
     if (type === '') {
       throw new Error('Тип персонажа не может быть пустым');
